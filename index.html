@@ -11,8 +11,8 @@
     <div class="container">
       <div id="calculadora" class="calculadora">
         <div class="display">
-            <div id="valor-anterior"></div>
-            <div id="valor-actual"></div>
+          <div id="valor-actual"></div>
+          <div id="resultado"></div>
         </div>
         
           <button onclick="borradoTotal()">C</button>
@@ -20,26 +20,26 @@
           <button class="operador" onclick="operar('*')">X</button>
           <button onclick="borradoParcial()">&lArr;</button>
 
-          <button class="numero" onclick="numero('7')">7</button>
-          <button class="numero" onclick="numero('8')">8</button>
-          <button class="numero" onclick="numero('9')">9</button>
+          <button class="numero" onclick="obtenerNumero('7')">7</button>
+          <button class="numero" onclick="obtenerNumero('8')">8</button>
+          <button class="numero" onclick="obtenerNumero('9')">9</button>
 
           <button class="operador" onclick="operar('-')">-</button>
 
-          <button class="numero" onclick="numero('4')">4</button>
-          <button class="numero" onclick="numero('5')">5</button>
-          <button class="numero" onclick="numero('6')">6</button>
+          <button class="numero" onclick="obtenerNumero('4')">4</button>
+          <button class="numero" onclick="obtenerNumero('5')">5</button>
+          <button class="numero" onclick="obtenerNumero('6')">6</button>
 
           <button class="operador" onclick="operar('+')">+</button>
 
-          <button class="numero" onclick="numero('1')">1</button>
-          <button class="numero" onclick="numero('2')">2</button>
-          <button class="numero" onclick="numero('3')">3</button>
-          <button class="numero" onclick="numero('0')">0</button>
+          <button class="numero" onclick="obtenerNumero('1')">1</button>
+          <button class="numero" onclick="obtenerNumero('2')">2</button>
+          <button class="numero" onclick="obtenerNumero('3')">3</button>
+          <button class="numero" onclick="obtenerNumero('0')">0</button>
 
           <button onclick="porcentaje()">%</button>
-          <button class="numero" onclick="numero('.')">.</button>
-          <button class="operador igual" onclick="igualar()">=</button>
+          <button class="numero" onclick="obtenerNumero('.')">.</button>
+          <button class="operador igual" onclick="igualar()"">=</button>
         </div>
     </div>
 

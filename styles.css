@@ -3,13 +3,10 @@
     --color-primary: #bcbe1d;
 }
 
-* {
-  color: var(--color-primary);
-}
-
 body {
   margin: 0;
   background-color: white;
+  font-family: sans-serif;
 }
 
 .container {
@@ -36,6 +33,7 @@ button {
   border-radius: 32px;
   font-size: 1.5rem;
   border: none;
+  color: var(--color-primary);
   background-color: var(--color-background);
   box-shadow: 7px 7px 14px #241f1f, -7px -7px 14px #383131;
 }
@@ -52,10 +50,11 @@ button:focus {
   grid-area: 5 / 4 / 7 / 5;
   background:var(--color-primary);
   color: white;
+  font-size: 2rem;
 }
 
 .igual:active {
-    background:  #868810;
+    background:  #aaaa8c;
 }
 
 .display {
@@ -66,15 +65,18 @@ button:focus {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: .3em;
   word-break: break-all;
   border-bottom: 1px solid rgba(102, 102, 102, 0.404);
+  color: white;
 }
 
 #valor-actual {
-  font-size: 1.5em;
+  font-size: 2.8em;
 }
 
-#valor-anterior {
-  font-size: 2em;
+#resultado {
+  font-size: 1.8em;
+  opacity: .34;
 }
