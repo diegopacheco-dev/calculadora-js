@@ -81,12 +81,28 @@ button:focus {
   opacity: .34;
 }
 
+@media screen and (max-width:425px){
+  button {
+    border-radius: 50%;
+  }
+  .igual {
+    border-radius: 1.5em;
+  }
+  .container {
+    background: var(--color-background);
+  }
+  .calculadora {
+    box-shadow: none;
+    height: 100vh;
+    grid-template-columns: repeat(4, calc(.115 * 100vh));
+    grid-template-rows: 40% repeat(5, calc(.115 * 100vh));
+    border-radius: 0;
+  }
+}
+
 @media screen and (max-width:375px){
   .calculadora {
-    width: 100%;
-    height: 100vh;
     grid-template-columns: repeat(4, calc(.105 * 100vh));
     grid-template-rows: 40% repeat(5, calc(.105 * 100vh));
-    border-radius: 0;
   }
 }
