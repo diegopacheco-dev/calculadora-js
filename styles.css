@@ -82,20 +82,21 @@ button:focus {
 }
 
 @media screen and (max-width:425px){
+  body {
+    background: var(--color-background);
+  }
   button {
     border-radius: 50%;
   }
   .igual {
     border-radius: 1.5em;
   }
-  .container {
-    background: var(--color-background);
-  }
   .calculadora {
+    height: 100%;
+    padding: 0;
     box-shadow: none;
-    height: 100vh;
     grid-template-columns: repeat(4, calc(.115 * 100vh));
-    grid-template-rows: 40% repeat(5, calc(.115 * 100vh));
+    grid-template-rows: calc(.40 * 100vh) repeat(5, calc(.115 * 100vh));
     border-radius: 0;
   }
 }
